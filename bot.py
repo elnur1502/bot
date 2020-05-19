@@ -28,10 +28,11 @@ def get_page_data(html):
                 'Тип': types,
                 'Время отклика': time}
         
+        print(data)
         
     except AttributeError: return False
 
-        print(data)
+        
     
 
 def main():
