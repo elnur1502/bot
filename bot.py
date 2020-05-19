@@ -20,7 +20,7 @@ def get_page_data(html):
         data = {'Игра': new,
                 'Скидка': sale,
                 'Страна ': country,
-                'в ру': 74*ru}
+                'в ру': ru}
 
         print(data)
 
