@@ -8,11 +8,11 @@ def get_html(site):
 
 
 def get_page_data(html):
-  try:  
-    soup = BeautifulSoup(html, 'lxml')
-    line = soup.find('table').find('tbody').find_all('tr')
+    try:  
+     soup = BeautifulSoup(html, 'lxml')
+     line = soup.find('table').find('tbody').find_all('tr')
 
-    for tr in line:
+     for tr in line:
         td = tr.find_all('td')
         ip = td[1].text
         port = td[2].text
@@ -21,7 +21,7 @@ def get_page_data(html):
         types = td[5].text
         time = td[6].text
 
-        data = {'ip': ip,
+         data = {'ip': ip,
                 'Порт': port,
                 'Страна': country,
                 'Анонимность': anonym,
@@ -29,7 +29,7 @@ def get_page_data(html):
                 'Время отклика': time}
         
         
-   except AttributeError: return False
+    except AttributeError: return False
 
         print(data)
     
