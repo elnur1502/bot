@@ -24,8 +24,8 @@ def get_page_data(html):
         country = td[3].text
         ru = td[4].text
 
-        data = {'new': ip,
-                'Скидка': port,
+        data = {'new': new,
+                'Скидка': sale,
                 'Страна': country,
                 'в ру': ru}
 
