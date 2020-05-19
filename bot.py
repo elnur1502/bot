@@ -21,7 +21,7 @@ def get_page_data(html):
         types = td[5].text
         time = td[6].text
 
-         data = {'ip': ip,
+        data = {'ip': ip,
                 'Порт': port,
                 'Страна': country,
                 'Анонимность': anonym,
