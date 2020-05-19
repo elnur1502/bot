@@ -15,7 +15,7 @@ def get_page_data(html):
         new = td[1].text.replace('\n\n\n\n\n\n','')
         sale = td[2].text.replace('\n','')
         country = td[3].text
-        ru = td[4].text
+        ru = td[4].text.replace('\n\n\n\n\n\n','')
 
         data = {'new': new,
                 'Скидка': sale,
