@@ -21,8 +21,8 @@ def get_page_data(html):
         td = tr.find_all('td')
         new = td[1].text
         sale = td[2].text
-        country = td[3].text.replace('\xa0', '')
-        ru = td[4].text.replace('\r\n        ', '')
+        country = td[3].text
+        ru = td[4].text
 
         data = {'new': ip,
                 'Скидка': port,
