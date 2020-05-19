@@ -13,7 +13,7 @@ def get_page_data(html):
 
     for tr in line:
         td = tr.find_all('td')
-        game = td.find_all('span')
+        game = td.find('span')
         sale = td[2].text.replace('\n','')
         country = td[3].text.replace('\n\n\n\n\n\n','').replace('\r','').replace('\n\n\n','').replace('**\n\n                                    от:\n                                \n\n',' ').replace('RUB\n\n','')
         ru = td[4].text.replace('\n\n\n\n\n\nСША**\n\n','').replace('RUB\n\n','$').replace('\n\n\n\n\n\n','')
