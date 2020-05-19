@@ -14,7 +14,7 @@ def get_page_data(html):
         td = tr.find_all('td')
         new = td[1].text.replace('\n\n\n\n\n\n','')
         sale = td[2].text.replace('\n','')
-        country = td[3].text
+        country = td[3].text.replace('**\n\n\n\n\n\n\n\n','').replace('\r','')
         ru = td[4].text.replace('\n\n\n\n\n\n','')
 
         data = {'new': new,
