@@ -8,6 +8,7 @@ def get_html(site):
 
 
 def get_page_data(html):
+  try:  
     soup = BeautifulSoup(html, 'lxml')
     line = soup.find('table').find('tbody').find_all('tr')
 
@@ -26,9 +27,12 @@ def get_page_data(html):
                 'Анонимность': anonym,
                 'Тип': types,
                 'Время отклика': time}
+        
+        
+   except AttributeError: return False
 
         print(data)
-
+    
 
 def main():
     url = 'https://www.xbox-now.com/ru/deal-list'
