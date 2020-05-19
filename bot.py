@@ -15,9 +15,9 @@ def get_page_data(html):
         td = tr.find_all('td')
         ip = td[1].text
         port = td[2].text
-        country = td[3].text.replace('\xa0', '')
-        anonym = td[4].text.replace('\r\n        ', '')
-        types = td[5].text.replace('\r\n\t\t\t\t\t', '').replace('\r\n        ', '')
+        country = td[3].text
+        anonym = td[4].text
+        types = td[5].text
         time = td[6].text
 
         data = {'ip': ip,
@@ -31,7 +31,7 @@ def get_page_data(html):
 
 
 def main():
-    url = 'http://foxtools.ru/Proxy'
+    url = 'https://www.xbox-now.com/ru/deal-list'
     get_page_data(get_html(url))
 
 
