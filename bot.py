@@ -9,25 +9,29 @@ def get_html(site):
 
 def get_page_data(html):
     soup = BeautifulSoup(html, 'lxml')
-    line = soup.find('table', class="table table-striped").find('tbody').find_all('tr')
+    line = soup.find('table', id='theProxyList').find('tbody').find_all('tr')
 
     for tr in line:
         td = tr.find_all('td')
-        new = td[1].text
-        sale = td[2].text
-        country = td[3].text
-        ru = td[4].text
+        ip = td[1].text
+        port = td[2].text
+        country = td[3].text.replace('\xa0', '')
+        anonym = td[4].text.replace('\r\n        ', '')
+        types = td[5].text.replace('\r\n\t\t\t\t\t', '').replace('\r\n        ', '')
+        time = td[6].text
 
-        data = {'new': ip,
-                'Скидка': port,
+        data = {'ip': ip,
+                'Порт': port,
                 'Страна': country,
-                'в ру': ru}
+                'Анонимность': anonym,
+                'Тип': types,
+                'Время отклика': time}
 
         print(data)
 
 
 def main():
-    url = 'https://www.xbox-now.com/ru/deal-list'
+    url = 'http://foxtools.ru/Proxy'
     get_page_data(get_html(url))
 
 
