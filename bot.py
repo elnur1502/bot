@@ -29,7 +29,7 @@ def get_page_data(html):
 
 
 def main():
-    url = open('skid.html', 'r')
+    url = open('ski.html', 'r')
     get_page_data(url)
 
 
