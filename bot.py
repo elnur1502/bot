@@ -5,7 +5,7 @@ f = open("skidki.html", "r")
 
 def get_page_data(html):
     
-    line = f.find('tbody').find_all('tr')
+    line = skidki.html.find('tbody').find_all('tr')
     
 
     for tr in line:
