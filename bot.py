@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-=open("skidki.html","r+")
+f=open("skidki.html","r+")
 s=(f.read())
 soup = BeautifulSoup(html, 'lxml')
 line = s.find('tbody').find_all('tr')
