@@ -24,7 +24,7 @@ def get_page_data(html):
         data = {game + ' - ' + priceAU + ' рублей' + '.' + '(Скидка ' + sale+')'}
       
         print(data)
-        print(6 + 2)
+        print(game + 80)
 
 
 def main():
