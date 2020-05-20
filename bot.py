@@ -19,7 +19,7 @@ def get_page_data(html):
         ru = td[4].text.replace('\n\n\n\n\n\nСША**\n\n','').replace('RUB\n\n','$').replace('\n\n\n\n\n\n','')
         
         for td in tr:
-            game = td.find('a').find_all('span').text
+            game = td.find('a').find('span').text
         
         
         data = {'Игра': game,
