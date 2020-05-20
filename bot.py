@@ -17,14 +17,9 @@ def get_page_data(html):
         game = aa.text.replace('\n','').replace('\n','')
         sale = td[2].text.replace('\n','')
         bb = td[3].find('b')
-        priceAU = bb.text.replace('\n','').replace('\n','').replace(' RUB','')
-        def num(priceAU):
-            try:
-             return int(priceAU)
-             except ValueError:
-            return float(priceAU)
+        priceAU = bb.replace('\n','').replace('\n','').replace(' RUB','')
         
-        data = {game + ' - ' + int(float(priceAU)) + ' рублей' + '.' + '(Скидка ' + sale+')'}
+        data = {game + ' - ' + priceAU + ' рублей' + '.' + '(Скидка ' + sale+')'}
       
         print(data)
         
