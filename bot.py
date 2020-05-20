@@ -16,7 +16,8 @@ def get_page_data(html):
       
         bb = td[3].find('b')
         priceAU = bb.text.replace('\n','').replace('\n','').replace(' RUB','').replace(',','.').replace('\xa0','').replace('RUB','')
-        price = round(float(priceAU))
+        priceA = float(priceAU)
+        price = round(prceA)
         
         
        
