@@ -30,7 +30,7 @@ def get_page_data(html):
 
 def main():
     url = open('skid.html', 'r')
-    get_page_data(get_html(url))
+    get_page_data(url)
 
 
 if __name__ == '__main__':
