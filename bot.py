@@ -18,21 +18,17 @@ def get_page_data(html):
         sale = td[2].text.replace('\n','')
         bb = td[3].find('b')
         priceAU = bb.text.replace('\n','').replace('\n','').replace(' RUB','')
+        type(int("priceAU"))
+        <class 'int'>
         ru = td[4].text.replace('\n\n\n\n\n\nСША**\n\n','').replace('RUB\n\n','$').replace('\n\n\n\n\n\n','')
         
         
         data = {game + ' - ' + priceAU + ' рублей' + '.' + '(Скидка ' + sale+')'}
         
-        global  b
-        d = " "
-        for i in data:            
-            b = data
-            c = i+": "+data
-            d = d+c+', '
+      
         
-        with open('sales.txt', 'a') as f:
-            print(d, file=f)
-        print(d)
+        
+        print(data)
 
 
 def main():
