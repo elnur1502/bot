@@ -27,7 +27,7 @@ def get_page_data(html):
 
 
 def main():
-    url = 'skidki.html'
+    url = open('skidki.html', 'r')
     get_page_data(url)
 
 
