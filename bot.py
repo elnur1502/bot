@@ -6,7 +6,7 @@ def get_html(site):
     return r.text
 
 
-def get_page_data(html):
+def get_page_data(source):
     soup = BeautifulSoup(html, 'lxml')
     line = soup.find('tbody').find_all('tr')
     
@@ -31,8 +31,8 @@ def get_page_data(html):
 
 
 def main():
-    url = 'skidki.html'
-    get_page_data(get_html(url))
+    source = 'skidki.html'
+    get_page_data(get_html(source))
 
 
 if __name__ == '__main__':
