@@ -26,8 +26,8 @@ def get_page_data(html):
         global  b
         d = " "
         for i in data:            
-            b = data[i]
-            c = i+": "+data[i]
+            b = data
+            c = i+": "+data
             d = d+c+', '
         
         with open('sales.txt', 'a') as f:
