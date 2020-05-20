@@ -19,7 +19,7 @@ def get_page_data(html):
         bb = td[3].find('b')
         priceAU = bb
         
-        data = {game + ' - ' + priceAU + ' рублей' + '.' + '(Скидка ' + sale+')'}
+        data = {game + ' - ' + str(priceAU) + ' рублей' + '.' + '(Скидка ' + sale+')'}
       
         print(data)
         
