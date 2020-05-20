@@ -7,7 +7,7 @@ with open('skidki.html', 'r') as f:
 
 
 def html_string(html):
-    soup = BeautifulSoup(html, 'lxml')
+
     line = soup.find('tbody').find_all('tr')
    
     
