@@ -23,12 +23,12 @@ def get_page_data(html):
         price = round(priceA)
         cc = td[4].find('b')
         priceRU = cc.text.replace('\n','').replace('\n','').replace(' RUB','').replace(',','.').replace('\xa0','').replace('RUB','')
-        priceR = float(priceRU)
+        priceR = float(float(priceRU)*72)
         priceU = round(priceR)
         
        
       
-        print(game + ' - ' + str(price) + ' рублей' + '.' + '(Скидка ' + sale+')' + 'В магазине Майкрософт: ' + str(priceU))
+        print(game + ' - ' + str(price) + ' рублей' + '.' + '(Скидка ' + sale+')' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
 
 
 def main():
