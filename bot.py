@@ -27,10 +27,10 @@ def get_page_data(html):
         priceU = round(priceR)
        
         if float(float(price)*2) < float(priceU)
-        print(game + ' - ' + str(price + price) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+            print(game + ' - ' + str(price + price) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
         else:
        
-        print(game + ' - ' + str(price) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+            print(game + ' - ' + str(price) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
 
 
 def main():
