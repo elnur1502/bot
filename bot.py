@@ -3,7 +3,6 @@ from bs4 import BeautifulSoup
 
 
 
-
 def get_page_data(html):
     
     line = f.find('tbody').find_all('tr')
@@ -30,7 +29,7 @@ def get_page_data(html):
 
 def main():
     f = open("skidki.html", "r")
-    get_page_data(get_html(f))
+    get_page_data(f)
 
 
 if __name__ == '__main__':
