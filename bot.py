@@ -22,8 +22,10 @@ def get_page_data(html):
         
         
         data = {game + ' - ' + priceAU + ' рублей' + '.' + '(Скидка ' + sale+')'}
-      
-        print(data)
+        
+        with open('sale.txt', 'a') as f:
+            print(data, file=f)
+        
 
 
 def main():
