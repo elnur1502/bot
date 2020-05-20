@@ -20,7 +20,7 @@ def get_page_data(html):
         
         
       
-        print(priceAU)
+        print(priceAU+20)
 
 
 def main():
