@@ -15,7 +15,8 @@ def get_page_data(html):
         td = tr.find_all('td')
         game = td[1].text.replace('\n\n\n\n\n\n','').replace('\nНОВИНКА\n\n\n','').replace('\n\n\n','').replace('\n\n','')
         sale = td[2].text.replace('\n','')
-        country = td[3].text.replace('\n\n\n\n\n\n','').replace('\r','').replace('\n\n\n','').replace('**\n\n                                    от:\n                                \n\n',' ').replace('RUB\n\n','')
+        b = td[3].find('b')
+        country = b.text
         ru = td[4].text.replace('\n\n\n\n\n\nСША**\n\n','').replace('RUB\n\n','$').replace('\n\n\n\n\n\n','')
         
         
