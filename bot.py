@@ -14,8 +14,8 @@ def get_page_data(html):
     for tr in line:
         td = tr.find_all('td')
         
-        bb = td[3].find('b').find('span').get_text()
-        priceAU = float(bb)
+        bb = td[3].find('b').find('span').get_float()
+        priceAU = bb
         
         
         
