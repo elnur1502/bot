@@ -21,7 +21,7 @@ def get_page_data(html):
         priceRU = cc.text.replace('\n','').replace('\n','').replace(' RUB','').replace(',','.').replace('\xa0','').replace('RUB','').replace('&nbsp;','')
         priceR = float(float(priceRU)*72)
         priceU = round(priceR)
-       
+        return priceA.text
       
         print(game + ' - ' + str(price) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
 
