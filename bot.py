@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-
+f = open("skidki.html", "r")
 
 def get_page_data(html):
     
