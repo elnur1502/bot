@@ -25,7 +25,7 @@ def get_page_data(html):
         
         with open('sale.txt', 'a') as f:
             print(data, file=f)
-        
+        print(data)
 
 
 def main():
