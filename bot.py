@@ -1,35 +1,24 @@
-import requests
-from bs4 import BeautifulSoup
+import re
 
-def get_html(site):
-    r = requests.get(site)
-    return r.text
+  
+# инициализирующая строка
 
+test_string = "There are 2 apples for 4 persons"
 
-def get_page_data(html):
-    soup = BeautifulSoup(html, 'lxml')
-    line = soup.find('tbody').find_all('tr')
-    
+  
+# печать оригинальной строки
 
-    for tr in line:
-        td = tr.find_all('td')
-        aa = td[1].find('a')
-        game = aa.text.replace('\n','').replace('\n','')
-        sale = td[2].text.replace('\n','')
-        bb = td[3].find('b')
-        priceAU = bb.text.replace('\n','').replace('\n','').replace(' RUB','')
-        res = [int(i) for i in priceAU.split() if i.isdigit()]
-        
-        
-        data = {game + ' - ' + str(res) + ' рублей' + '.' + '(Скидка ' + sale+')'}
-      
-        print(data)
-        
+print("The original string : " + test_string)
 
-def main():
-    url = 'https://www.xbox-now.com/ru/deal-list'
-    get_page_data(get_html(url))
+  
+# используя re.findall ()
+# получение чисел из строки
 
+temp = re.findall(r'\d+', test_string)
 
-if __name__ == '__main__':
-    main()
+res = list(map(int, temp))
+
+  
+# результат печати
+
+print("The numbers list is : " + str(res))
