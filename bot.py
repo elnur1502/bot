@@ -14,9 +14,9 @@ def get_page_data(html):
     for tr in line:
         td = tr.find_all('td')
         aa = td[1].find('a')
-        game = aa.text
+        game = aa.text.replace('\n','').replace('\n','')
         sale = td[2].text.replace('\n','')
-        bb = td[3].find('b').replace('\n','').replace('\n','')
+        bb = td[3].find('b')
         priceAU = bb.text.replace('\n','').replace('\n','').replace(' RUB','')
         ru = td[4].text.replace('\n\n\n\n\n\nСША**\n\n','').replace('RUB\n\n','$').replace('\n\n\n\n\n\n','')
         
