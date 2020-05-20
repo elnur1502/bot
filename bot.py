@@ -15,12 +15,12 @@ def get_page_data(html):
         td = tr.find_all('td')
         
         bb = td[3].find('b').find('span').get_text()
-        priceAU = bb
+        priceAU = len(bb)
         
         
         
       
-        print(priceAU+20)
+        print(priceAU)
 
 
 def main():
