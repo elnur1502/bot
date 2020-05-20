@@ -21,7 +21,7 @@ def get_page_data(html):
         
        
       
-        print(price)
+        print(price+20)
 
 
 def main():
