@@ -21,11 +21,14 @@ def get_page_data(html):
         priceAU = bb.text.replace('\n','').replace('\n','').replace(' RUB','').replace(',','.').replace('\xa0','').replace('RUB','')
         priceA = float(priceAU)
         price = round(priceA)
-        
+        cc = td[4].find('b')
+        priceRU = cc.text.replace('\n','').replace('\n','').replace(' RUB','').replace(',','.').replace('\xa0','').replace('RUB','')
+        priceR = float(priceAU)
+        priceU = round(priceA)
         
        
       
-        print(game + ' - ' + str(price) + ' рублей' + '.' + '(Скидка ' + sale+')')
+        print(game + ' - ' + str(price) + ' рублей' + '.' + '(Скидка ' + sale+')' + 'В магазине Майкрософт: ' + priceU)
 
 
 def main():
