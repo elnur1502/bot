@@ -30,7 +30,8 @@ def get_page_data(html):
             b = data[i]
             c = i+": "+data[i]
             d = d+c+', '
-         with open('proxy.txt', 'a') as f:
+
+        with open('proxy.txt', 'a') as f:
             print(d, file=f)
 
 
