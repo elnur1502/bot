@@ -7,4 +7,4 @@ page = parse(skidki.html).getroot()
 hrefs = page.cssselect("a.topic")
 for row in hrefs:
     # Получаем атрибут href
-    print row.get("href")
+    print row.get("hrefs")
