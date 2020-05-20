@@ -21,7 +21,7 @@ def get_page_data(html):
         float(priceAU)
         int(float(priceAU)
         
-        data = {game + ' - ' + priceAU + ' рублей' + '.' + '(Скидка ' + sale+')'}
+        data = {game + ' - ' + int(float(priceAU) + ' рублей' + '.' + '(Скидка ' + sale+')'}
       
         print(data)
         print(int(float(priceAU))*2)
