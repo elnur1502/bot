@@ -19,7 +19,7 @@ def get_page_data(html):
         sale = td[2].text.replace('\n','')
         bb = td[3].find('b')
         priceAU = bb.text.replace('\n','').replace('\n','').replace(' RUB','').replace(',','.').replace('\xa0','').replace('RUB','').replace('&nbsp;','').replace('&nbsp;','')
-        priceA = priceAU.text.replace('\n','').replace('\n','').replace(' RUB','').replace(',','.').replace('\xa0','').replace('RUB','').replace('&nbsp;','').replace('&nbsp;','')
+        priceA = priceAU
         price = round(float(float(priceA)*0.94*1.19))
         cc = td[4].find('b')
         priceRU = cc.text.replace('\n','').replace('\n','').replace(' RUB','').replace(',','.').replace('\xa0','').replace('RUB','').replace('&nbsp;','')
