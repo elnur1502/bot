@@ -13,7 +13,7 @@ def get_page_data(html):
 
     for tr in line:
         td = tr.find_all('td')
-        aa = td[1].find('a', class='visible-xs')
+        aa = td[1].find('a')
         game = aa.text
         sale = td[2].text.replace('\n','')
         bb = td[3].find('b')
