@@ -3,7 +3,7 @@ import re
   
 # инициализирующая строка
 
-test_string = "There are 2 apples for 4 persons"
+test_string = "There are 2.5 apples for 4,6 persons"
 
   
 # печать оригинальной строки
