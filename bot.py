@@ -1,9 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-def get_html(site):
-    r = requests.get(site)
-    return r.text
+
 
 
 def get_page_data(html):
