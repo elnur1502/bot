@@ -16,10 +16,7 @@ def get_page_data(html):
         game = td[1].text.replace('\n\n\n\n\n\n','').replace('\nНОВИНКА\n\n\n','').replace('\n\n\n','').replace('\n\n','')
         sale = td[2].text.replace('\n','')
         b = td[3].find('b')
-        AU = [e.text for e in b.children if e.name is not None]
-        country = str(AU)
-        priceRU = country.replace('\n','').replace('\n','').replace(' RUB','')
-        priceAU = (priceRU*50)
+        priceAU = b.replace('\n','').replace('\n','').replace(' RUB','')
         ru = td[4].text.replace('\n\n\n\n\n\nСША**\n\n','').replace('RUB\n\n','$').replace('\n\n\n\n\n\n','')
         
         
