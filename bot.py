@@ -14,11 +14,11 @@ def get_page_data(html):
         game = aa.text.replace('\n','').replace('\n','').replace('НОВИНКА','')
         sale = td[2].text.replace('\n','')
         bb = td[3].find('b')
-        priceAU = bb.text.replace('\n','').replace('\n','').replace(' RUB','').replace(',','.').replace('\xa0','').replace('RUB','').replace('&nbsp;','').replace('','12345')
+        priceAU = bb.text.replace('\n','').replace('\n','').replace(' RUB','').replace(',','.').replace('\xa0','').replace('RUB','').replace('&nbsp;','').replace('','1')
         priceA = float(float(priceAU)*0.94*1.19)
         price = round(priceA)
         cc = td[4].find('b')
-        priceRU = cc.text.replace('\n','').replace('\n','').replace(' RUB','').replace(',','.').replace('\xa0','').replace('RUB','').replace('&nbsp;','').replace('','12345')
+        priceRU = cc.text.replace('\n','').replace('\n','').replace(' RUB','').replace(',','.').replace('\xa0','').replace('RUB','').replace('&nbsp;','').replace('','1')
         priceR = float(float(priceRU)*72)
         priceU = round(priceR)
       
