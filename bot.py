@@ -11,7 +11,7 @@ def get_page_data(html):
         td = tr.find_all('td')
         aa = td[1].find('a')
         game = aa.text.replace('\n','').replace('\n','').replace('НОВИНКА','')
-        sale = td[2].text.replace('\n','')
+        sale = td[2].text.replace('\n','').replace(' (GOLD)','')
         bb = td[3].find('b')
         priceAU = bb.text.replace('\n','').replace('\n','').replace(' RUB','').replace(',','.').replace('\xa0','').replace('RUB','').replace('&nbsp;','')
         priceA = float(float(priceAU)+30)
