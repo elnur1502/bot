@@ -24,7 +24,13 @@ def get_page_data(html):
                 'Скидка': sale,
                 'Страна ': priceAU,
                 'в ру': ru}
-
+        global  b
+        d = " "
+        for i in data:            
+            b = data[i]
+            c = i+": "+data[i]
+            d = d+c+', '
+            
         print(data)
 
 
