@@ -21,7 +21,7 @@ def get_page_data(html):
         ru = td[4].text.replace('\n\n\n\n\n\nСША**\n\n','').replace('RUB\n\n','$').replace('\n\n\n\n\n\n','')
         
         
-        data = {game + ' - ' + priceAU + 'рублей' + '.' + '(Скидка ' + sale+')'}
+        data = {game + ' - ' + priceAU + ' рублей' + '.' + '(Скидка ' + sale+')'}
       
         print(data)
 
