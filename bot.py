@@ -18,12 +18,13 @@ def get_page_data(html):
         sale = td[2].text.replace('\n','')
         bb = td[3].find('b')
         priceAU = bb.text.replace('\n','').replace('\n','').replace(' RUB','')
-       
+        float(priceAU)
+        int(float(priceAU)
         ru = td[4].text.replace('\n\n\n\n\n\nСША**\n\n','').replace('RUB\n\n','$').replace('\n\n\n\n\n\n','')
         data = {game + ' - ' + priceAU + ' рублей' + '.' + '(Скидка ' + sale+')'}
       
         print(data)
-        print(float(priceAU)*2)
+        print(int(float(priceAU))*2)
 
 def main():
     url = 'https://www.xbox-now.com/ru/deal-list'
