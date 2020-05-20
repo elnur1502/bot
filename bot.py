@@ -20,7 +20,7 @@ def get_page_data(html):
         priceAU = bb.text.replace('\n','').replace('\n','').replace(' RUB','')
         float(priceAU)
         int(float(priceAU)
-        ru = td[4].text.replace('\n\n\n\n\n\nСША**\n\n','').replace('RUB\n\n','$').replace('\n\n\n\n\n\n','')
+        
         data = {game + ' - ' + priceAU + ' рублей' + '.' + '(Скидка ' + sale+')'}
       
         print(data)
