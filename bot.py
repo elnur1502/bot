@@ -21,7 +21,7 @@ def get_page_data(html):
         res = [int(i) for i in priceAU.split() if i.isdigit()]
         
         
-        data = {game + ' - ' + res + ' рублей' + '.' + '(Скидка ' + sale+')'}
+        data = {game + ' - ' + str(res) + ' рублей' + '.' + '(Скидка ' + sale+')'}
       
         print(data)
         
