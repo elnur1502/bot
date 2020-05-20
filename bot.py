@@ -16,12 +16,12 @@ def get_page_data(html):
         
         bb = td[3].find('b').find('span').get_text()
         
-        priceAU = [float(i) for i in bb.split()]
+        priceAU = float(bb)
         
         
         
       
-        print(str(priceAU))
+        print(priceAU)
 
 
 def main():
