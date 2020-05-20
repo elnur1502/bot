@@ -22,7 +22,7 @@ def get_page_data(html):
         priceA = float(float(priceAU)*0.94*1.19)
         price = round(priceA)
         cc = td[4].find('b')
-        priceRU = cc.text.replace('\n','').replace('\n','').replace(' RUB','').replace(',','.').replace('\xa0','').replace('RUB','')
+        priceRU = cc.text.replace('\n','').replace('\n','').replace(' RUB','').replace(',','.').replace('\xa0','').replace('RUB','').replace('&nbsp;','')
         priceR = float(float(priceRU)*72)
         priceU = round(priceR)
         
