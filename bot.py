@@ -18,7 +18,7 @@ def get_page_data(html):
         b = td[3].find('b')
         AU = [e.text for e in b.children if e.name is not None]
         country = str(AU)
-        priceRU = country.replace('\n','').replace('\n','')
+        priceRU = country.replace('\n','').replace('\n','').replace(' RUB','')
         priceAU = (float(float(priceRU) * 50))
         ru = td[4].text.replace('\n\n\n\n\n\nСША**\n\n','').replace('RUB\n\n','$').replace('\n\n\n\n\n\n','')
         
