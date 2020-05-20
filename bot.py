@@ -20,10 +20,10 @@ def get_page_data(html):
         ru = td[4].text.replace('\n\n\n\n\n\nСША**\n\n','').replace('RUB\n\n','$').replace('\n\n\n\n\n\n','')
         
         
-        data = {'Игра': game,
+        data = {'': game,
+                '-': priceAU,
                 'Скидка': sale,
-                'Страна ': priceAU,
-                'в ру': ru}
+                }
         global  b
         d = " "
         for i in data:            
@@ -33,7 +33,8 @@ def get_page_data(html):
             
         with open('sale.txt', 'a') as f:
             print(data, file=f)
-        
+            
+        print(data)
 
 
 def main():
