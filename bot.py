@@ -22,9 +22,17 @@ def get_page_data(html):
         priceU = round(priceR)
        
         if float(price) < float(priceU):
-            print(game + ' - ' + str(price) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
-        else:
-            print('')
+            if float(float(price)*2) < float(float(priceU)-200):
+                print(game + ' - ' + str(float(price)*2) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+            else:
+                if float(float(price)*1.9) < float(float(priceU)-200):
+                    print(game + ' - ' + str(float(price)*1.9) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+                else:
+                    if float(float(price)*1.8) < float(float(priceU)-200):
+                        print(game + ' - ' + str(float(price)*1.9) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+                    else:
+                        print('')
+        
 
 def main():
     url = open('ski.html', 'r')
