@@ -7,8 +7,8 @@ def get_html(site):
 
 
 def get_page_data(html):
-    soup = BeautifulSoup(html, 'lxml')
-    line = soup.find('tbody').find_all('tr')
+    
+    line = f.find('tbody').find_all('tr')
     
 
     for tr in line:
