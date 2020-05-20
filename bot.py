@@ -1,13 +1,13 @@
 import requests
 from bs4 import BeautifulSoup
 
-
-with open('skidki.html', 'r') as f: 
-        html_string = f.read()
+def get_html(site):
+    r = requests.get(site)
+    return r.text
 
 
 def html_string(html):
-
+    soup = BeautifulSoup(html, 'lxml')
     line = soup.find('tbody').find_all('tr')
    
     
