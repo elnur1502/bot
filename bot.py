@@ -1,11 +1,14 @@
 import requests
 from bs4 import BeautifulSoup
 
-f = open("skidki.html", "r")
+def get_html(site):
+    r = requests.get(site)
+    return r.text
+
 
 def get_page_data(html):
-    
-    line = skidki.html.find('tbody').find_all('tr')
+    soup = BeautifulSoup(html, 'lxml')
+    line = soup.find('tbody').find_all('tr')
     
 
     for tr in line:
@@ -28,8 +31,8 @@ def get_page_data(html):
 
 
 def main():
-    f = open("skidki.html", "r")
-    get_page_data(f)
+    url = skidki.html
+    get_page_data(get_html(url))
 
 
 if __name__ == '__main__':
