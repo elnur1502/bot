@@ -23,7 +23,7 @@ def get_page_data(html):
         data = {game + ' - ' + priceAU + ' рублей' + '.' + '(Скидка ' + sale+')'}
       
         print(data)
-        print(len(priceAU)*2)
+        print(float(priceAU)*2)
 
 def main():
     url = 'https://www.xbox-now.com/ru/deal-list'
