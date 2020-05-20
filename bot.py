@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
+
 def get_html(site):
     r = requests.get(site)
     return r.text
@@ -34,7 +35,8 @@ def get_page_data(html):
 
 
 def main():
-    url = 'https://www.xbox-now.com/ru/deal-list'
+    with open('skidki.html', 'r') as f:
+    skidki = f.read()
     get_page_data(get_html(url))
 
 
