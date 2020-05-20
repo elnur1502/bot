@@ -16,13 +16,14 @@ def get_page_data(html):
         game = td[1].text.replace('\n\n\n\n\n\n','').replace('\nНОВИНКА\n\n\n','').replace('\n\n\n','').replace('\n\n','')
         sale = td[2].text.replace('\n','')
         b = td[3].find('b')
-        country = b.text
+        country = b.text.replace('\n','').replace('\n','')
+        priceRU = (float(float(country) * 100))
         ru = td[4].text.replace('\n\n\n\n\n\nСША**\n\n','').replace('RUB\n\n','$').replace('\n\n\n\n\n\n','')
         
         
         data = {'Игра': game,
                 'Скидка': sale,
-                'Страна ': country,
+                'Страна ': priceRU,
                 'в ру': ru}
 
         print(data)
