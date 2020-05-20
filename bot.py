@@ -16,7 +16,7 @@ def get_page_data(html):
       
         bb = td[3].find('b')
         priceAU = bb.text.replace('\n','').replace('\n','').replace(' RUB','').replace(',','.').replace('\xa0','')
-        price = float(priceAU)
+        price = int(priceAU)
         
         
        
