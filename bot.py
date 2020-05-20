@@ -19,10 +19,10 @@ def get_page_data(html):
         bb = td[3].find('b')
         priceAU = bb.text.replace('\n','').replace('\n','').replace(' RUB','')
         def num(priceAU):
-    try:
-        return int(priceAU)
-    except ValueError:
-        return float(priceAU)
+            try:
+             return int(priceAU)
+             except ValueError:
+            return float(priceAU)
         
         data = {game + ' - ' + int(float(priceAU)) + ' рублей' + '.' + '(Скидка ' + sale+')'}
       
