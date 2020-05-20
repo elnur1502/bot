@@ -31,7 +31,7 @@ def get_page_data(html):
 
 
 def main():
-    url = skidki.html
+    url = 'skidki.html'
     get_page_data(get_html(url))
 
 
