@@ -74,7 +74,7 @@ def get_page_data(html):
                                                                                     print(game + ' - ' + str(float(price)*1.75) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
                                                                                 else:
                                                                                     if float(float(price)*1.7) < float(float(priceU)-150):
-                                                                                    print(game + ' - ' + str(float(price)*1.7) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+                                                                                        print(game + ' - ' + str(float(price)*1.7) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
                                                                                     else:
                                                                                         if float(float(price)*1.65) < float(float(priceU)-150):
                                                                                             print(game + ' - ' + str(float(price)*1.65) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
@@ -92,8 +92,8 @@ def get_page_data(html):
                                                                                                             print(game + ' - ' + str(float(price)*2) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
                                                                                                          else:
                                                                                                              if float(float(price)*1.95) < float(float(priceU)-100):
-                                                                                                                print(game + ' - ' + str(float(price)*1.95) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
-                                                                                                                else:
+                                                                                                                    print(game + ' - ' + str(float(price)*1.95) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+                                                                                                             else:
                                                                                                                     if float(float(price)*1.9) < float(float(priceU)-100):
                                                                                                                         print(game + ' - ' + str(float(price)*1.9) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
                                                                                                                     else:
@@ -107,7 +107,7 @@ def get_page_data(html):
                                                                                                                                     print(game + ' - ' + str(float(price)*1.75) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
                                                                                                                                 else:
                                                                                                                                     if float(float(price)*1.7) < float(float(priceU)-100):
-                                                                                                                                    print(game + ' - ' + str(float(price)*1.7) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+                                                                                                                                        print(game + ' - ' + str(float(price)*1.7) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
                                                                                                                                     else:
                                                                                                                                         if float(float(price)*1.65) < float(float(priceU)-100):
                                                                                                                                             print(game + ' - ' + str(float(price)*1.65) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
