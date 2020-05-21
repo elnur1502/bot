@@ -60,7 +60,7 @@ def get_page_data(html):
                                                          else:
                                                              if float(float(price)*1.95) < float(float(priceU)-150):
                                                                 print(game + ' - ' + str(float(price)*1.95) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
-                                                                else:
+                                                             else:
                                                                     if float(float(price)*1.9) < float(float(priceU)-150):
                                                                         print(game + ' - ' + str(float(price)*1.9) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
                                                                     else:
@@ -120,11 +120,11 @@ def get_page_data(html):
                                                                                                                                                 else:
                                                                                                                                                     if float(float(price)*1.5) < float(float(priceU)-100):
                                                                                                                                                         print(game + ' - ' + str(float(price)*1.5) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
-                                                                                                        
-                                                             
-                                                            
-                                                            
-                                                            
+
+
+
+
+
                                                             
                                                             
                                                             
