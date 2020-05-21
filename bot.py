@@ -22,12 +22,11 @@ def get_page_data(html):
         priceU = round(priceR)
        
         if float(price) < float(priceU):
-            a = 2
-            while a >= 1.5:
-                a -= 0.05
             if float(float(price)*a) < float(float(priceU)-200):
-                print(game + ' - ' + str(float(price)*a) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
-                
+                a = 2
+                while a >= 1.5:
+                    print(game + ' - ' + str(float(price)*a) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+                    a -= 0.05
             else:
                  print('')
         
