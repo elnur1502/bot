@@ -20,17 +20,119 @@ def get_page_data(html):
         priceRU = cc.text.replace('\n','').replace('\n','').replace(' RUB','').replace(',','.').replace('\xa0','').replace('RUB','').replace('&nbsp;','')
         priceR = float(float(priceRU)*72)
         priceU = round(priceR)
+       
+        if float(price) < float(priceU):
+            if float(float(price)*2) < float(float(priceU)-200):
+                print(game + ' - ' + str(float(price)*2) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+            else:
+                if float(float(price)*1.95) < float(float(priceU)-200):
+                    print(game + ' - ' + str(float(price)*1.95) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+                else:
+                    if float(float(price)*1.9) < float(float(priceU)-200):
+                       print(game + ' - ' + str(float(price)*1.9) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+                    else:
+                        if float(float(price)*1.85) < float(float(priceU)-200):
+                           print(game + ' - ' + str(float(price)*1.85) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+                        else:
+                            if float(float(price)*1.8) < float(float(priceU)-200):
+                               print(game + ' - ' + str(float(price)*1.8) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+                            else:
+                                if float(float(price)*1.75) < float(float(priceU)-200):
+                                   print(game + ' - ' + str(float(price)*1.75) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+                                else:
+                                    if float(float(price)*1.7) < float(float(priceU)-200):
+                                       print(game + ' - ' + str(float(price)*1.7) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+                                    else:
+                                         if float(float(price)*1.65) < float(float(priceU)-200):
+                                            print(game + ' - ' + str(float(price)*1.65) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+                                         else:
+                                             if float(float(price)*1.6) < float(float(priceU)-200):
+                                                print(game + ' - ' + str(float(price)*1.6) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+                                             else:
+                                                 if float(float(price)*1.55) < float(float(priceU)-200):
+                                                    print(game + ' - ' + str(float(price)*1.55) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+                                                 else:
+                                                     if float(float(price)*1.5) < float(float(priceU)-200):
+                                                        print(game + ' - ' + str(float(price)*1.5) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+                                                     else:
+                                                         if float(float(price)*2) < float(float(priceU)-150):
+                                                            print(game + ' - ' + str(float(price)*2) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+                                                         else:
+                                                             if float(float(price)*1.95) < float(float(priceU)-150):
+                                                                print(game + ' - ' + str(float(price)*1.95) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+                                                                else:
+                                                                    if float(float(price)*1.9) < float(float(priceU)-150):
+                                                                        print(game + ' - ' + str(float(price)*1.9) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+                                                                    else:
+                                                                        if float(float(price)*1.85) < float(float(priceU)-150):
+                                                                            print(game + ' - ' + str(float(price)*1.85) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+                                                                        else:
+                                                                            if float(float(price)*1.8) < float(float(priceU)-150):
+                                                                                print(game + ' - ' + str(float(price)*1.8) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+                                                                            else:
+                                                                                if float(float(price)*1.75) < float(float(priceU)-150):
+                                                                                    print(game + ' - ' + str(float(price)*1.75) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+                                                                                else:
+                                                                                    if float(float(price)*1.7) < float(float(priceU)-150):
+                                                                                    print(game + ' - ' + str(float(price)*1.7) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+                                                                                    else:
+                                                                                        if float(float(price)*1.65) < float(float(priceU)-150):
+                                                                                            print(game + ' - ' + str(float(price)*1.65) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+                                                                                        else:
+                                                                                            if float(float(price)*1.6) < float(float(priceU)-150):
+                                                                                                print(game + ' - ' + str(float(price)*1.6) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+                                                                                            else:
+                                                                                                if float(float(price)*1.55) < float(float(priceU)-150):
+                                                                                                    print(game + ' - ' + str(float(price)*1.55) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+                                                                                                else:
+                                                                                                    if float(float(price)*1.5) < float(float(priceU)-150):
+                                                                                                        print(game + ' - ' + str(float(price)*1.5) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+                                                                                                    else:
+                                                                                                         if float(float(price)*2) < float(float(priceU)-100):
+                                                                                                            print(game + ' - ' + str(float(price)*2) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+                                                                                                         else:
+                                                                                                             if float(float(price)*1.95) < float(float(priceU)-100):
+                                                                                                                print(game + ' - ' + str(float(price)*1.95) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+                                                                                                                else:
+                                                                                                                    if float(float(price)*1.9) < float(float(priceU)-100):
+                                                                                                                        print(game + ' - ' + str(float(price)*1.9) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+                                                                                                                    else:
+                                                                                                                        if float(float(price)*1.85) < float(float(priceU)-100):
+                                                                                                                            print(game + ' - ' + str(float(price)*1.85) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+                                                                                                                        else:
+                                                                                                                            if float(float(price)*1.8) < float(float(priceU)-100):
+                                                                                                                                print(game + ' - ' + str(float(price)*1.8) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+                                                                                                                            else:
+                                                                                                                                if float(float(price)*1.75) < float(float(priceU)-100):
+                                                                                                                                    print(game + ' - ' + str(float(price)*1.75) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+                                                                                                                                else:
+                                                                                                                                    if float(float(price)*1.7) < float(float(priceU)-100):
+                                                                                                                                    print(game + ' - ' + str(float(price)*1.7) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+                                                                                                                                    else:
+                                                                                                                                        if float(float(price)*1.65) < float(float(priceU)-100):
+                                                                                                                                            print(game + ' - ' + str(float(price)*1.65) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+                                                                                                                                        else:
+                                                                                                                                            if float(float(price)*1.6) < float(float(priceU)-100):
+                                                                                                                                                print(game + ' - ' + str(float(price)*1.6) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+                                                                                                                                            else:
+                                                                                                                                                if float(float(price)*1.55) < float(float(priceU)-100):
+                                                                                                                                                    print(game + ' - ' + str(float(price)*1.55) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+                                                                                                                                                else:
+                                                                                                                                                    if float(float(price)*1.5) < float(float(priceU)-100):
+                                                                                                                                                        print(game + ' - ' + str(float(price)*1.5) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+                                                                                                        
+                                                             
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                              print('')
         
-        
-        a = 2.05
-        while a >= 1.5:
-            a -= 0.05
-            if float(price) < float(priceU):
-                if float(float(price)*a) < float(float(priceU)-200):
-                    print(game + ' - ' + str(float(price)*a) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
-                else: 
-                    print('')
-                
+
 def main():
     url = open('ski.html', 'r')
     get_page_data(url)
