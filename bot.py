@@ -1,5 +1,8 @@
-a = 1
-while a < 5:
-    a += 1
-    if a == 3:
-        print(a) # 2
+b = 1.6
+a = 2
+while a >= 1.5:
+    a -= 0.05
+    if a > b^
+        print(a*2)
+    else:
+        print('')
