@@ -1,6 +1,5 @@
 
 from bs4 import BeautifulSoup
-a = 2
 
 def get_page_data(html):
     soup = BeautifulSoup(html, 'lxml')
@@ -22,13 +21,14 @@ def get_page_data(html):
         priceR = float(float(priceRU)*72)
         priceU = round(priceR)
        
-    
-    
+        
         if float(price) < float(priceU):
-            if float(float(price)*a) < float(float(priceU)-200):
-                while a >= 1.5:
+            a = 2
+            while a >= 1.5:
+                if float(float(price)*a) < float(float(priceU)-200):
+                 a -= 0.05
                     print(game + ' - ' + str(float(price)*a) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
-                    a -= 0.05
+                   
             else:
                  print('')
         
