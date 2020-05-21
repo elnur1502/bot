@@ -57,8 +57,8 @@ def get_page_data(html):
                                                                                                                                             else:
                                                                                                                                                 if float(float(price)*2) < float(float(priceU)-150):
                                                                                                                                                     print(game + ' - ' + str(float(price)*2) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
-                                                                                                                                                else:
-                                                                                                                                                    print('')
+                                                                                                                                                    else:
+                                                                                                                                                        print('')
         
 
 def main():
