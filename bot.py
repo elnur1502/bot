@@ -25,7 +25,7 @@ def get_page_data(html):
        	
 	if float(price) < float(priceU):
 	    if float(float(price)*2) < float(float(priceU)-200):
-                print(game + ' - ' + str(round(float(price)*2)) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
+                print(game + ' - ' + str(round(float(price)*2)))
             else:
                 if float(float(price)*1.95) < float(float(priceU)-200):
                     print(game + ' - ' + str(round(float(price)*1.95)) + ' рублей' + '.' + '(Скидка ' + sale+') ' + 'В магазине Майкрософт: ' + str(priceU) + ' рублей')
