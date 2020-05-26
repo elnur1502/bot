@@ -12,7 +12,7 @@ def get_page_data(html):
     for tr in line:
         td = tr.find_all('td')
         aa = td[1].find('a')
-        game = aa.text.replace('\n','').replace('\n','').replace('НОВИНКА','')
+        game = aa.text
         sale = td[2].text.replace('\n','')
         bb = td[3].find('b')
         priceAU = bb.text.replace('\n','').replace('\n','').replace(' RUB','').replace(',','.').replace('\xa0','').replace('RUB','').replace('&nbsp;','')
