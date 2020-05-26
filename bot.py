@@ -13,13 +13,13 @@ def get_page_data(html):
         td = tr.find_all('td')
         aa = td[1].find('a')
         game = aa.text
-        sale = td[2].text.replace('\n','')
+        sale = td[2]
         bb = td[3].find('b')
-        priceAU = bb.text.replace('\n','').replace('\n','').replace(' RUB','').replace(',','.').replace('\xa0','').replace('RUB','').replace('&nbsp;','')
+        priceAU = bb
         priceA = float(float(priceAU)+30)
         price = round(priceA)
         cc = td[4].find('b')
-        priceRU = cc.text.replace('\n','').replace('\n','').replace(' RUB','').replace(',','.').replace('\xa0','').replace('RUB','').replace('&nbsp;','')
+        priceRU = cc.text
         priceR = float(float(priceRU)*72)
         priceU = round(priceR)
        	
