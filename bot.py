@@ -1,4 +1,4 @@
-
+# -*- coding: utf-8 -*-
 from bs4 import BeautifulSoup
 
 def get_page_data(html):
