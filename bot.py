@@ -9,6 +9,7 @@ def get_page_data(html):
     for tr in line:
         td = tr.find_all('td')
         aa = td[1].find('a')
+        print(aa)
         
 def main():
     url = open('ski.html', 'r')
